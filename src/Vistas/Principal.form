@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JDesktopPane" name="jDesktopPane1">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JDesktopPane(){&#xa;    @Override&#xa;    protected void paintComponent(Graphics g){&#xa;        super.paintComponent(g);&#xa;        Color color1 = Color.decode(&quot;#487BFF&quot;);&#xa;        Color color2 = Color.decode(&quot;#2B4A99&quot;);&#xa;        Graphics2D G2D = (Graphics2D) g.create();&#xa;&#xa;        GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;        G2D.setPaint(gp);&#xa;        G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;        G2D.dispose();&#xa;    }&#xa;}&#xa;"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="230" y="0" width="1050" height="630"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="jLabel11" min="-2" pref="203" max="-2" attributes="0"/>
+                      <EmptySpace pref="35" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jLabel4" pref="525" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jLabel9" pref="525" max="32767" attributes="0"/>
+                              <Component id="jLabel10" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="jLabel12" min="-2" pref="203" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" pref="80" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel10" min="-2" pref="159" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel11" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                                  <Component id="jLabel12" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel12">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="d8" green="d8" red="d8" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="62" style="3"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="35" green="17" red="13" type="rgb"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Text"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel(){&#xa;    @Override&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;&#xa;        Graphics2D g2d = (Graphics2D) g.create();&#xa;&#xa;        Color color1 = Color.decode(&quot;#D9D9D9&quot;);&#xa;        int borderRadius = 40;&#xa;        g2d.setColor(color1);&#xa;        g2d.fillRoundRect(0, 0, getWidth(), getHeight(), borderRadius, borderRadius);&#xa;&#xa;        Color textColor = new Color(19, 23, 53);&#xa;        Font font = new Font(&quot;SansSerif&quot;, Font.BOLD, 14);&#xa;        g2d.setFont(font);&#xa;        g2d.setColor(textColor);&#xa;        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);&#xa;&#xa;        Date currentDate = new Date();&#xa;&#xa;        SimpleDateFormat timeFormat = new SimpleDateFormat(&quot;HH:mm&quot;);&#xa;        String timeString = timeFormat.format(currentDate);&#xa;&#xa;        String fullText = &quot;Hora: &quot; + timeString;&#xa;&#xa;        FontMetrics fm = g2d.getFontMetrics();&#xa;        int widthOfText = fm.stringWidth(fullText);&#xa;        int ascent = fm.getAscent();&#xa;        int descent = fm.getDescent();&#xa;&#xa;        int xPosition = (getWidth() - widthOfText) / 2;&#xa;        int yPosition = (getHeight() - descent + ascent) / 2;&#xa;&#xa;        g2d.drawString(fullText, xPosition, yPosition);&#xa;&#xa;        g2d.dispose();&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel11">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="d8" green="d8" red="d8" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="62" style="3"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="35" green="17" red="13" type="rgb"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Text"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel(){&#xa;    @Override&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;&#xa;        Graphics2D g2d = (Graphics2D) g.create();&#xa;&#xa;        Color color1 = Color.decode(&quot;#D9D9D9&quot;);&#xa;        int borderRadius = 40;&#xa;        g2d.setColor(color1);&#xa;        g2d.fillRoundRect(0, 0, getWidth(), getHeight(), borderRadius, borderRadius);&#xa;&#xa;        Color textColor = new Color(19, 23, 53);&#xa;        Font font = new Font(&quot;SansSerif&quot;, Font.BOLD, 14);&#xa;        g2d.setFont(font);&#xa;        g2d.setColor(textColor);&#xa;        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);&#xa;&#xa;        Date currentDate = new Date();&#xa;&#xa;        SimpleDateFormat dateFormat = new SimpleDateFormat(&quot;dd/MM/yyyy&quot;);&#xa;        String dateString = dateFormat.format(currentDate);&#xa;&#xa;        String fullText = &quot;Fecha: &quot; + dateString ;&#xa;&#xa;        FontMetrics fm = g2d.getFontMetrics();&#xa;        int widthOfText = fm.stringWidth(fullText);&#xa;        int ascent = fm.getAscent();&#xa;        int descent = fm.getDescent();&#xa;&#xa;        int xPosition = (getWidth() - widthOfText) / 2;&#xa;        int yPosition = (getHeight() - descent + ascent) / 2;&#xa;&#xa;        g2d.drawString(fullText, xPosition, yPosition);&#xa;&#xa;        g2d.dispose();&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="d8" green="d8" red="d8" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="62" style="3"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="35" green="17" red="13" type="rgb"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Quick Mark"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel(){&#xa;    @Override&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;&#xa;        Graphics2D g2d = (Graphics2D) g.create();&#xa;&#xa;        Color color1 = Color.decode(&quot;#D9D9D9&quot;);&#xa;        int borderRadius = 40;&#xa;        g2d.setColor(color1);&#xa;        g2d.fillRoundRect(0, 0, getWidth(), getHeight(), borderRadius, borderRadius);&#xa;&#xa;        Color textColor = new Color(19, 23, 53); &#xa;        Font font = new Font(&quot;SansSerif&quot;, Font.BOLD, 62);&#xa;        g2d.setFont(font);&#xa;        g2d.setColor(textColor);&#xa;        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);&#xa;&#xa;        String text = &quot;Quick Mark&quot;;&#xa;        FontMetrics fm = g2d.getFontMetrics();&#xa;        int widthOfText = fm.stringWidth(text);&#xa;        int ascent = fm.getAscent();&#xa;        int descent = fm.getDescent();&#xa;&#xa;        int xPosition = (getWidth() - widthOfText) / 2;&#xa;        int yPosition = (getHeight() - descent + ascent) / 2;&#xa;&#xa;        g2d.drawString(text, xPosition, yPosition);&#xa;&#xa;        g2d.dispose();&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel9">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagenes/Circular_Logo.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel10">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="d8" green="d8" red="d8" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="18" style="3"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="35" green="17" red="13" type="rgb"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Text"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel(){&#xa;    @Override&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;&#xa;        Graphics2D g2d = (Graphics2D) g.create();&#xa;&#xa;        Color color1 = Color.decode(&quot;#D9D9D9&quot;);&#xa;        int borderRadius = 40;&#xa;        g2d.setColor(color1);&#xa;        g2d.fillRoundRect(0, 0, getWidth(), getHeight(), borderRadius, borderRadius);&#xa;&#xa;        Color textColor = new Color(19, 23, 53);&#xa;        Font font = new Font(&quot;SansSerif&quot;, Font.BOLD, 18);&#xa;        g2d.setFont(font);&#xa;        g2d.setColor(textColor);&#xa;        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);&#xa;&#xa;        String text = &quot;&lt;html&gt;&lt;div align = &apos;justify&apos;&gt;&quot;&#xa;        + &quot;Quick Mark es una empresa especializada en ofrecer &quot;&#xa;        + &quot;soluciones eficientes y precisas para la gesti&#xf3;n de productos. &quot;&#xa;        + &quot;Su enfoque se centra en proporcionar servicios &#xe1;giles y de alta calidad, &quot;&#xa;        + &quot;asegurando la confianza y satisfacci&#xf3;n de sus clientes.&quot;&#xa;        + &quot;&lt;/div&gt;&lt;/html&gt;&quot;;&#xa;&#xa;        JLabel label = new JLabel(text);&#xa;        label.setFont(new Font(&quot;SansSerif&quot;, Font.BOLD, 18));&#xa;        label.setForeground(new Color(19, 23, 53));&#xa;        label.setBounds(20, 20, getWidth() - 40, getHeight() - 40);&#xa;        label.setVerticalAlignment(JLabel.TOP);&#xa;        label.setHorizontalAlignment(JLabel.CENTER);&#xa;&#xa;        add(label);&#xa;&#xa;        g2d.dispose();&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="36" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="17" red="14" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Quick Mark"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="40" width="230" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagenes/user.jpg"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="40" y="120" width="50" height="50"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f3" green="e9" red="e1" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Perpetua" size="12" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f3" green="e9" red="e1" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="________________________________"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="20" y="210" width="-1" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="18" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="17" red="14" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Usuario:"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="130" y="120" width="80" height="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="18" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="17" red="14" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="..."/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="130" y="140" width="80" height="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="Proveedores">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagenes/proveedores.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Gestion de Proveedores"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProveedoresActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(){&#xa;&#xa;    ImageIcon icon = new ImageIcon(&quot;src/Imagenes/proveedores.png&quot;);&#xa;&#xa;    {&#xa;        addActionListener(new ActionListener() {&#xa;            @Override&#xa;            public void actionPerformed(ActionEvent e) {&#xa;                isPressed[0] = false;&#xa;                isPressed[1] = false;&#xa;                isPressed[2] = false;&#xa;                isPressed[3] = true;&#xa;                repaintButtons();&#xa;            }&#xa;        });&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;        Graphics2D G2D = (Graphics2D) g.create();&#xa;&#xa;        if(isPressed[3] == false){&#xa;            Color color1 = Color.decode(&quot;#FFFFFF&quot;);&#xa;            Color color2 = Color.decode(&quot;#FFFFFF&quot;);&#xa;&#xa;            GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;            G2D.setPaint(gp);&#xa;            G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;            String texto = &quot;Gestion de Proveedores&quot;;&#xa;&#xa;            g.setColor(Color.BLACK);&#xa;            Font font = new Font(&quot;SansSerif&quot;,Font.BOLD , 16);&#xa;            g.setFont(font);&#xa;&#xa;            FontMetrics metrics = g.getFontMetrics(g.getFont());&#xa;            int textoWidth = metrics.stringWidth(texto);&#xa;&#xa;            int x = ((getWidth() - metrics.stringWidth(texto)) / 2) + 20;&#xa;            int y = ((getHeight() - metrics.getHeight()) / 2) + metrics.getAscent();&#xa;            g.drawString(texto, x, y);&#xa;&#xa;            Image image = icon.getImage();&#xa;            int imageX = textoWidth - 175;&#xa;            int imageY = (getHeight() - icon.getIconHeight()) / 2;&#xa;            g.drawImage(image, imageX, imageY, null);&#xa;        }&#xa;&#xa;        if(isPressed[3] == true){&#xa;&#xa;            Color color1 = Color.decode(&quot;#487BFF&quot;);&#xa;            Color color2 = Color.decode(&quot;#2B4A99&quot;);&#xa;&#xa;            GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;            G2D.setPaint(gp);&#xa;            G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;            String texto = &quot;Gestion de Proveedores&quot;;&#xa;&#xa;            g.setColor(Color.BLACK);&#xa;            Font font = new Font(&quot;SansSerif&quot;,Font.BOLD , 16);&#xa;            g.setFont(font);&#xa;&#xa;            FontMetrics metrics = g.getFontMetrics(g.getFont());&#xa;            int textoWidth = metrics.stringWidth(texto);&#xa;&#xa;            int x = ((getWidth() - metrics.stringWidth(texto)) / 2) + 20;&#xa;            int y = ((getHeight() - metrics.getHeight()) / 2) + metrics.getAscent();&#xa;            g.drawString(texto, x, y);&#xa;&#xa;            Image image = icon.getImage();&#xa;            int imageX = textoWidth - 175;&#xa;            int imageY = (getHeight() - icon.getIconHeight()) / 2;&#xa;            g.drawImage(image, imageX, imageY, null);&#xa;&#xa;        }&#xa;&#xa;        G2D.dispose();&#xa;    }&#xa;}"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="470" width="230" height="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="Pedidos">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagenes/pedidos.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Gestion de Pedidos"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PedidosActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(){&#xa;&#xa;    ImageIcon icon = new ImageIcon(&quot;src/Imagenes/pedidos.png&quot;);&#xa;&#xa;    {&#xa;        addActionListener(new ActionListener() {&#xa;            @Override&#xa;            public void actionPerformed(ActionEvent e) {&#xa;                isPressed[0] = false;&#xa;                isPressed[1] = false;&#xa;                isPressed[2] = true;&#xa;                isPressed[3] = false;&#xa;                repaintButtons();&#xa;            }&#xa;        });&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;        Graphics2D G2D = (Graphics2D) g.create();&#xa;&#xa;        if(isPressed[2] == false){&#xa;            Color color1 = Color.decode(&quot;#FFFFFF&quot;);&#xa;            Color color2 = Color.decode(&quot;#FFFFFF&quot;);&#xa;&#xa;            GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;            G2D.setPaint(gp);&#xa;            G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;            String texto = &quot;Gestion de Pedidos&quot;;&#xa;&#xa;            g.setColor(Color.BLACK);&#xa;            Font font = new Font(&quot;SansSerif&quot;,Font.BOLD , 16);&#xa;            g.setFont(font);&#xa;&#xa;            FontMetrics metrics = g.getFontMetrics(g.getFont());&#xa;            int textoWidth = metrics.stringWidth(texto);&#xa;&#xa;            int x = ((getWidth() - metrics.stringWidth(texto)) / 2) + 20;&#xa;            int y = ((getHeight() - metrics.getHeight()) / 2) + metrics.getAscent();&#xa;            g.drawString(texto, x, y);&#xa;&#xa;            Image image = icon.getImage();&#xa;            int imageX = textoWidth - 140;&#xa;            int imageY = (getHeight() - icon.getIconHeight()) / 2;&#xa;            g.drawImage(image, imageX, imageY, null);&#xa;        }&#xa;&#xa;        if(isPressed[2] == true){&#xa;&#xa;            Color color1 = Color.decode(&quot;#487BFF&quot;);&#xa;            Color color2 = Color.decode(&quot;#2B4A99&quot;);&#xa;&#xa;            GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;            G2D.setPaint(gp);&#xa;            G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;            String texto = &quot;Gestion de Pedidos&quot;;&#xa;&#xa;            g.setColor(Color.BLACK);&#xa;            Font font = new Font(&quot;SansSerif&quot;,Font.BOLD , 16);&#xa;            g.setFont(font);&#xa;&#xa;            FontMetrics metrics = g.getFontMetrics(g.getFont());&#xa;            int textoWidth = metrics.stringWidth(texto);&#xa;&#xa;            int x = ((getWidth() - metrics.stringWidth(texto)) / 2) + 20;&#xa;            int y = ((getHeight() - metrics.getHeight()) / 2) + metrics.getAscent();&#xa;            g.drawString(texto, x, y);&#xa;&#xa;            Image image = icon.getImage();&#xa;            int imageX = textoWidth - 140;&#xa;            int imageY = (getHeight() - icon.getIconHeight()) / 2;&#xa;            g.drawImage(image, imageX, imageY, null);&#xa;&#xa;        }&#xa;&#xa;        G2D.dispose();&#xa;    }&#xa;}"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="400" width="230" height="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="Inventario">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagenes/Shop.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Gestion de Inventario"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="InventarioActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(){&#xa;&#xa;    ImageIcon icon = new ImageIcon(&quot;src/Imagenes/Shop.png&quot;);&#xa;&#xa;    {&#xa;        addActionListener(new ActionListener() {&#xa;            @Override&#xa;            public void actionPerformed(ActionEvent e) {&#xa;                isPressed[0] = false;&#xa;                isPressed[1] = true;&#xa;                isPressed[2] = false;&#xa;                isPressed[3] = false;&#xa;                repaintButtons();&#xa;            }&#xa;        });&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;        Graphics2D G2D = (Graphics2D) g.create();&#xa;&#xa;        if(isPressed[1] == false){&#xa;            Color color1 = Color.decode(&quot;#FFFFFF&quot;);&#xa;            Color color2 = Color.decode(&quot;#FFFFFF&quot;);&#xa;&#xa;            GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;            G2D.setPaint(gp);&#xa;            G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;            String texto = &quot;Gestion de Inventario&quot;;&#xa;&#xa;            g.setColor(Color.BLACK);&#xa;            Font font = new Font(&quot;SansSerif&quot;,Font.BOLD , 16);&#xa;            g.setFont(font);&#xa;&#xa;            FontMetrics metrics = g.getFontMetrics(g.getFont());&#xa;            int textoWidth = metrics.stringWidth(texto);&#xa;&#xa;            int x = ((getWidth() - metrics.stringWidth(texto)) / 2) + 20;&#xa;            int y = ((getHeight() - metrics.getHeight()) / 2) + metrics.getAscent();&#xa;            g.drawString(texto, x, y);&#xa;&#xa;            Image image = icon.getImage();&#xa;            int imageX = textoWidth - 155;&#xa;            int imageY = (getHeight() - icon.getIconHeight()) / 2;&#xa;            g.drawImage(image, imageX, imageY, null);&#xa;        }&#xa;&#xa;        if(isPressed[1] == true){&#xa;&#xa;            Color color1 = Color.decode(&quot;#487BFF&quot;);&#xa;            Color color2 = Color.decode(&quot;#2B4A99&quot;);&#xa;&#xa;            GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;            G2D.setPaint(gp);&#xa;            G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;            String texto = &quot;Gestion de Inventario&quot;;&#xa;&#xa;            g.setColor(Color.BLACK);&#xa;            Font font = new Font(&quot;SansSerif&quot;,Font.BOLD , 16);&#xa;            g.setFont(font);&#xa;&#xa;            FontMetrics metrics = g.getFontMetrics(g.getFont());&#xa;            int textoWidth = metrics.stringWidth(texto);&#xa;&#xa;            int x = ((getWidth() - metrics.stringWidth(texto)) / 2) + 20;&#xa;            int y = ((getHeight() - metrics.getHeight()) / 2) + metrics.getAscent();&#xa;            g.drawString(texto, x, y);&#xa;&#xa;            Image image = icon.getImage();&#xa;            int imageX = textoWidth - 155;&#xa;            int imageY = (getHeight() - icon.getIconHeight()) / 2;&#xa;            g.drawImage(image, imageX, imageY, null);&#xa;&#xa;        }&#xa;&#xa;        G2D.dispose();&#xa;    }&#xa;}"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="330" width="230" height="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="Inicio">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagenes/cuadrados.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="   Inicio"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="InicioActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(){&#xa;&#xa;    ImageIcon icon = new ImageIcon(&quot;src/Imagenes/cuadrados.png&quot;);&#xa;&#xa;    {&#xa;        isPressed[0] = true; &#xa;    }&#xa;&#xa;    {&#xa;        addActionListener(new ActionListener() {&#xa;            @Override&#xa;            public void actionPerformed(ActionEvent e) {&#xa;                isPressed[0] = true;&#xa;                isPressed[1] = false;&#xa;                isPressed[2] = false;&#xa;                isPressed[3] = false;&#xa;                repaintButtons();&#xa;            }&#xa;        });&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;        Graphics2D G2D = (Graphics2D) g.create();&#xa;&#xa;        if(isPressed[0] == false){&#xa;            Color color1 = Color.decode(&quot;#FFFFFF&quot;);&#xa;            Color color2 = Color.decode(&quot;#FFFFFF&quot;);&#xa;&#xa;            GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;            G2D.setPaint(gp);&#xa;            G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;            String texto = &quot;Inicio&quot;;&#xa;&#xa;            g.setColor(Color.BLACK);&#xa;            Font font = new Font(&quot;SansSerif&quot;,Font.BOLD , 16);&#xa;            g.setFont(font);&#xa;&#xa;            FontMetrics metrics = g.getFontMetrics(g.getFont());&#xa;            int textoWidth = metrics.stringWidth(texto);&#xa;&#xa;            int x = ((getWidth() - metrics.stringWidth(texto)) / 2) + 20;&#xa;            int y = ((getHeight() - metrics.getHeight()) / 2) + metrics.getAscent();&#xa;            g.drawString(texto, x, y);&#xa;&#xa;            Image image = icon.getImage();&#xa;            int imageX = textoWidth - 33;&#xa;            int imageY = (getHeight() - icon.getIconHeight()) / 2;&#xa;            g.drawImage(image, imageX, imageY, null);&#xa;        }&#xa;&#xa;        if(isPressed[0] == true){&#xa;&#xa;            Color color1 = Color.decode(&quot;#487BFF&quot;);&#xa;            Color color2 = Color.decode(&quot;#2B4A99&quot;);&#xa;&#xa;            GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;            G2D.setPaint(gp);&#xa;            G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;            String texto = &quot;Inicio&quot;;&#xa;&#xa;            g.setColor(Color.BLACK);&#xa;            Font font = new Font(&quot;SansSerif&quot;,Font.BOLD , 16);&#xa;            g.setFont(font);&#xa;&#xa;            FontMetrics metrics = g.getFontMetrics(g.getFont());&#xa;            int textoWidth = metrics.stringWidth(texto);&#xa;&#xa;            int x = ((getWidth() - metrics.stringWidth(texto)) / 2) + 20;&#xa;            int y = ((getHeight() - metrics.getHeight()) / 2) + metrics.getAscent();&#xa;            g.drawString(texto, x, y);&#xa;&#xa;            Image image = icon.getImage();&#xa;            int imageX = textoWidth - 33;&#xa;            int imageY = (getHeight() - icon.getIconHeight()) / 2;&#xa;            g.drawImage(image, imageX, imageY, null);&#xa;        }&#xa;&#xa;        G2D.dispose();&#xa;&#xa;    }&#xa;}"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="260" width="230" height="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagenes/back.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="   Cerrar Sesion"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="580" width="150" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
