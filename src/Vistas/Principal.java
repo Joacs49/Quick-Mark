@@ -4,8 +4,7 @@
  */
 package Vistas;
 
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import Controlador.controladorPrincipal;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -21,46 +20,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JLabel;
 
-
-
 public class Principal extends javax.swing.JFrame {
 
     public Principal() {
         initComponents();
-
-        this.setLocationRelativeTo(null);
-        this.setResizable(false);
-
-        jLabel8.addMouseListener(new MouseAdapter() {
-            public void mouseClicked(MouseEvent e) {
-                redireccionar(e);
-            }
-        });
-    }
-
-    public void redireccionar(MouseEvent e) {
-        Inicio_Sesion inicioSesion = new Inicio_Sesion();
-        inicioSesion.setVisible(true);
-        this.dispose();
-    }
-
-    private boolean[] isPressed = new boolean[4];
-
-    private void repaintButtons() {
-        Inicio.repaint();
-        Inventario.repaint();
-        Pedidos.repaint();
-        Proveedores.repaint();
     }
     
-    private void ocultar(boolean tipo){
-        jLabel4.setVisible(tipo);
-        jLabel9.setVisible(tipo);
-        jLabel10.setVisible(tipo);
-        jLabel11.setVisible(tipo);
-        jLabel12.setVisible(tipo);
-    }
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -241,11 +206,14 @@ public class Principal extends javax.swing.JFrame {
                 addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        isPressed[0] = false;
-                        isPressed[1] = false;
-                        isPressed[2] = false;
-                        isPressed[3] = true;
-                        repaintButtons();
+                        activo[0] = false;
+                        activo[1] = false;
+                        activo[2] = false;
+                        activo[3] = true;
+                        Inicio.repaint();
+                        Inventario.repaint();
+                        Pedidos.repaint();
+                        Proveedores.repaint();
                     }
                 });
             }
@@ -255,7 +223,7 @@ public class Principal extends javax.swing.JFrame {
                 super.paintComponent(g);
                 Graphics2D G2D = (Graphics2D) g.create();
 
-                if(isPressed[3] == false){
+                if(activo[3] == false){
                     Color color1 = Color.decode("#FFFFFF");
                     Color color2 = Color.decode("#FFFFFF");
 
@@ -282,7 +250,7 @@ public class Principal extends javax.swing.JFrame {
                     g.drawImage(image, imageX, imageY, null);
                 }
 
-                if(isPressed[3] == true){
+                if(activo[3] == true){
 
                     Color color1 = Color.decode("#487BFF");
                     Color color2 = Color.decode("#2B4A99");
@@ -322,11 +290,14 @@ public class Principal extends javax.swing.JFrame {
                 addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        isPressed[0] = false;
-                        isPressed[1] = false;
-                        isPressed[2] = true;
-                        isPressed[3] = false;
-                        repaintButtons();
+                        activo[0] = false;
+                        activo[1] = false;
+                        activo[2] = true;
+                        activo[3] = false;
+                        Inicio.repaint();
+                        Inventario.repaint();
+                        Pedidos.repaint();
+                        Proveedores.repaint();
                     }
                 });
             }
@@ -336,7 +307,7 @@ public class Principal extends javax.swing.JFrame {
                 super.paintComponent(g);
                 Graphics2D G2D = (Graphics2D) g.create();
 
-                if(isPressed[2] == false){
+                if(activo[2] == false){
                     Color color1 = Color.decode("#FFFFFF");
                     Color color2 = Color.decode("#FFFFFF");
 
@@ -363,7 +334,7 @@ public class Principal extends javax.swing.JFrame {
                     g.drawImage(image, imageX, imageY, null);
                 }
 
-                if(isPressed[2] == true){
+                if(activo[2] == true){
 
                     Color color1 = Color.decode("#487BFF");
                     Color color2 = Color.decode("#2B4A99");
@@ -403,11 +374,14 @@ public class Principal extends javax.swing.JFrame {
                 addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        isPressed[0] = false;
-                        isPressed[1] = true;
-                        isPressed[2] = false;
-                        isPressed[3] = false;
-                        repaintButtons();
+                        activo[0] = false;
+                        activo[1] = true;
+                        activo[2] = false;
+                        activo[3] = false;
+                        Inicio.repaint();
+                        Inventario.repaint();
+                        Pedidos.repaint();
+                        Proveedores.repaint();
                     }
                 });
             }
@@ -417,7 +391,7 @@ public class Principal extends javax.swing.JFrame {
                 super.paintComponent(g);
                 Graphics2D G2D = (Graphics2D) g.create();
 
-                if(isPressed[1] == false){
+                if(activo[1] == false){
                     Color color1 = Color.decode("#FFFFFF");
                     Color color2 = Color.decode("#FFFFFF");
 
@@ -444,7 +418,7 @@ public class Principal extends javax.swing.JFrame {
                     g.drawImage(image, imageX, imageY, null);
                 }
 
-                if(isPressed[1] == true){
+                if(activo[1] == true){
 
                     Color color1 = Color.decode("#487BFF");
                     Color color2 = Color.decode("#2B4A99");
@@ -481,18 +455,21 @@ public class Principal extends javax.swing.JFrame {
             ImageIcon icon = new ImageIcon("src/Imagenes/cuadrados.png");
 
             {
-                isPressed[0] = true;
+                activo[0] = true;
             }
 
             {
                 addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        isPressed[0] = true;
-                        isPressed[1] = false;
-                        isPressed[2] = false;
-                        isPressed[3] = false;
-                        repaintButtons();
+                        activo[0] = true;
+                        activo[1] = false;
+                        activo[2] = false;
+                        activo[3] = false;
+                        Inicio.repaint();
+                        Inventario.repaint();
+                        Pedidos.repaint();
+                        Proveedores.repaint();
                     }
                 });
             }
@@ -502,7 +479,7 @@ public class Principal extends javax.swing.JFrame {
                 super.paintComponent(g);
                 Graphics2D G2D = (Graphics2D) g.create();
 
-                if(isPressed[0] == false){
+                if(activo[0] == false){
                     Color color1 = Color.decode("#FFFFFF");
                     Color color2 = Color.decode("#FFFFFF");
 
@@ -529,7 +506,7 @@ public class Principal extends javax.swing.JFrame {
                     g.drawImage(image, imageX, imageY, null);
                 }
 
-                if(isPressed[0] == true){
+                if(activo[0] == true){
 
                     Color color1 = Color.decode("#487BFF");
                     Color color2 = Color.decode("#2B4A99");
@@ -611,9 +588,8 @@ public class Principal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 525, Short.MAX_VALUE)
-                    .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 525, Short.MAX_VALUE)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 525, Short.MAX_VALUE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(32, 32, 32)
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28))
@@ -664,7 +640,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(20, 23, 55));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("...");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 80, 20));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 80, 20));
 
         Proveedores.setBackground(new java.awt.Color(255, 255, 255));
         Proveedores.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -740,34 +716,19 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void InventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InventarioActionPerformed
-        G_Inventario inventario = new G_Inventario();
-        jDesktopPane1.add(inventario);
-        inventario.setUI(null);
-        inventario.setVisible(true);
         
-        ocultar(false);
     }//GEN-LAST:event_InventarioActionPerformed
 
     private void PedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PedidosActionPerformed
-        G_Pedidos pedidos = new G_Pedidos();
-        jDesktopPane1.add(pedidos);
-        pedidos.setUI(null);
-        pedidos.setVisible(true);
-        
-        ocultar(false);
+      
     }//GEN-LAST:event_PedidosActionPerformed
 
     private void ProveedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProveedoresActionPerformed
-        G_Proveedores proveedores = new G_Proveedores();
-        jDesktopPane1.add(proveedores);
-        proveedores.setUI(null);
-        proveedores.setVisible(true);
         
-        ocultar(false);
     }//GEN-LAST:event_ProveedoresActionPerformed
 
     private void InicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioActionPerformed
-        ocultar(true);
+        
     }//GEN-LAST:event_InicioActionPerformed
 
     
@@ -812,22 +773,23 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Inicio;
-    private javax.swing.JButton Inventario;
-    private javax.swing.JButton Pedidos;
-    private javax.swing.JButton Proveedores;
-    private javax.swing.JDesktopPane jDesktopPane1;
+    public javax.swing.JButton Inicio;
+    public boolean activo[] = new boolean[4];
+    public javax.swing.JButton Inventario;
+    public javax.swing.JButton Pedidos;
+    public javax.swing.JButton Proveedores;
+    public javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
+    public javax.swing.JLabel jLabel10;
+    public javax.swing.JLabel jLabel11;
+    public javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
+    public javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    public javax.swing.JLabel jLabel7;
+    public javax.swing.JLabel jLabel8;
+    public javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

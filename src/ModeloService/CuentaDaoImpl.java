@@ -21,7 +21,8 @@ public class CuentaDaoImpl implements ICuentaDAO{
     private ResultSet rst;
     
     private Principal prin = new Principal();
-    private controladorPrincipal principal = new controladorPrincipal(prin);
+    private Cuenta cuenta = new Cuenta();
+    private controladorPrincipal principal = new controladorPrincipal(prin, cuenta);
     private Inicio_Sesion inicio = new Inicio_Sesion();
     
     public CuentaDaoImpl(){
@@ -67,5 +68,27 @@ public class CuentaDaoImpl implements ICuentaDAO{
             JOptionPane.showMessageDialog(null, "Ocurrio un problema");
         }
         return false;
+    }
+
+    @Override
+    public String recuperarCuenta(String id) {
+        String cadena = "";
+        try{
+            pst = cn.conectar().prepareCall("CALL RECUPERAR_CUENTA(?)");
+            
+            pst.setString(1, id);
+            
+            rst = pst.executeQuery();
+            
+            while(rst.next()){
+                rst.getString(2);
+                
+                cadena += rst.getString(2);
+            }
+            
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema");
+        }
+        return cadena;
     }
 }

@@ -6,7 +6,6 @@ package Aplicacion;
 
 import Controlador.controladorInicio;
 import Modelo.Cuenta;
-import ModeloDao.ICuentaDAO;
 import Vistas.Inicio_Sesion;
 
 public class app {
@@ -19,4 +18,4 @@ public class app {
         controlador.iniciar();
     }
     
-}
+} 

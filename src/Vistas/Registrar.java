@@ -16,32 +16,8 @@ import java.awt.event.MouseEvent;
 
 public class Registrar extends javax.swing.JFrame {
     
-    private TextPrompt placeholder;
-    
     public Registrar() {
         initComponents();
-        
-        placeholder = new TextPrompt("Ingrese su codigo", jTextField1);
-        placeholder = new TextPrompt("Ingrese su usuario", jTextField2);
-        placeholder = new TextPrompt("Ingrese su contraseña", jPasswordField1);
-
-        this.setResizable(false);
-        this.setLocationRelativeTo(null);
-        
-        jLabel3.setText(textoLabel3);
-        jLabel6.setText(textoLabel6);
-        
-        jLabel6.addMouseListener(new MouseAdapter() {
-            public void mouseClicked(MouseEvent e) {
-                redireccionar(e);
-            }
-        });
-    }
-    
-    public void redireccionar(MouseEvent e){
-        Inicio_Sesion inicioSesion = new Inicio_Sesion();
-        inicioSesion .setVisible(true);
-        this.dispose();
     }
 
     @SuppressWarnings("unchecked")
@@ -167,9 +143,7 @@ public class Registrar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarActionPerformed
-        Inicio_Sesion inicio = new Inicio_Sesion();
-        inicio.setVisible(true);
-        this.dispose();
+        
     }//GEN-LAST:event_RegistrarActionPerformed
 
     public static void main(String args[]) {
@@ -206,24 +180,18 @@ public class Registrar extends javax.swing.JFrame {
             }
         });
     }
-    
-    private static final String textoLabel3 = "<html><span style='color: white; font-family: Perpetua; font-size: 14px;'>"
-            + "Completa los campos con tus datos.</span></html>";
-    
-    private static final String textoLabel6 = "<html><span style='color: white; font-family: Perpetua; font-size: 14px;'>"
-            + "¿Ya tienes cuenta? <b> Inicia Sesion. </b> </span></html>";
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Registrar;
+    public javax.swing.JButton Registrar;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    public javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    public javax.swing.JPasswordField jPasswordField1;
+    public javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

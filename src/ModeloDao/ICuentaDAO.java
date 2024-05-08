@@ -10,4 +10,5 @@ public interface ICuentaDAO {
     
     public void crearCuenta(Cuenta cuenta);
     public boolean verificarCuenta(Cuenta cuenta);
+    public String recuperarCuenta(String id);
 }

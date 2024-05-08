@@ -23,6 +23,7 @@ public class controladorInicio implements ActionListener {
     private ICuentaDAO cuentaDao;
 
     private TextPrompt placeholder;
+    private static String id;
 
     public controladorInicio(Inicio_Sesion inicio, Cuenta cuenta) {
         this.inicio = inicio;
@@ -47,7 +48,8 @@ public class controladorInicio implements ActionListener {
         inicio.jLabel6.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent e) {
                 Registrar registrar = new Registrar();
-                registrar.setVisible(true);
+                controladorRegistro registro = new controladorRegistro(registrar, cuenta);
+                registro.iniciar();
                 inicio.dispose();
             }
         });
@@ -61,6 +63,8 @@ public class controladorInicio implements ActionListener {
         cuenta.setContraseña(inicio.jPasswordField1.getText());
 
         if (e.getSource() == inicio.Iniciar) {
+            id = cuentaDao.recuperarCuenta(cuenta.getId_trabajador());
+            
             if (cuentaDao.verificarCuenta(cuenta)) {
                 inicio.dispose(); 
             }else{
@@ -76,4 +80,7 @@ public class controladorInicio implements ActionListener {
     private static final String textoLabel6 = "<html><span style='color: white; font-family: Perpetua; font-size: 14px;'>"
             + "¿No tienes cuenta? <b> Registrate. </b> </span></html>";
 
+    public static String getId() {
+        return id;
+    }
 }
