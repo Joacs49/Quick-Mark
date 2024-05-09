@@ -85,21 +85,19 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
         Modificar = new javax.swing.JButton();
         Eliminar = new javax.swing.JButton();
         Cancelar = new javax.swing.JButton();
-        Cerrar = new javax.swing.JButton();
         addIMG = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel(){
             @Override
             protected void paintComponent(Graphics g){
                 super.paintComponent(g);
-                Color color1 = Color.decode("#439BFF");
-                Color color2 = Color.decode("#0070F0");
-                Graphics2D G2D = (Graphics2D) g.create();
+                Color color = Color.decode("#4894FF");
+                Graphics2D g2d = (Graphics2D) g.create();
 
-                GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);
-                G2D.setPaint(gp);
-                G2D.fillRect(0, 0, getWidth(), getHeight());
+                GradientPaint gp = new GradientPaint(0, 0, color, 0, getHeight(), color);
+                g2d.setPaint(gp);
+                g2d.fillRect(0, 0, getWidth(), getHeight());
 
-                G2D.dispose();
+                g2d.dispose();
             }
         };
         Val = new javax.swing.JTextField();
@@ -145,15 +143,14 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
             @Override
             protected void paintComponent(Graphics g){
                 super.paintComponent(g);
-                Color color1 = Color.decode("#439BFF");
-                Color color2 = Color.decode("#0070F0");
-                Graphics2D G2D = (Graphics2D) g.create();
+                Color color = Color.decode("#4894FF");
+                Graphics2D g2d = (Graphics2D) g.create();
 
-                GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);
-                G2D.setPaint(gp);
-                G2D.fillRect(0, 0, getWidth(), getHeight());
+                GradientPaint gp = new GradientPaint(0, 0, color, 0, getHeight(), color);
+                g2d.setPaint(gp);
+                g2d.fillRect(0, 0, getWidth(), getHeight());
 
-                G2D.dispose();
+                g2d.dispose();
             }
         };
         jLabel5 = new javax.swing.JLabel();
@@ -198,15 +195,14 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
             @Override
             protected void paintComponent(Graphics g){
                 super.paintComponent(g);
-                Color color1 = Color.decode("#439BFF");
-                Color color2 = Color.decode("#0070F0");
-                Graphics2D G2D = (Graphics2D) g.create();
+                Color color = Color.decode("#4894FF");
+                Graphics2D g2d = (Graphics2D) g.create();
 
-                GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);
-                G2D.setPaint(gp);
-                G2D.fillRect(0, 0, getWidth(), getHeight());
+                GradientPaint gp = new GradientPaint(0, 0, color, 0, getHeight(), color);
+                g2d.setPaint(gp);
+                g2d.fillRect(0, 0, getWidth(), getHeight());
 
-                G2D.dispose();
+                g2d.dispose();
             }
         };
         jLabel9 = new javax.swing.JLabel();
@@ -329,18 +325,10 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
         });
         jPanel1.add(Cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 165, 90, 30));
 
-        Cerrar.setText("Cerrar");
-        Cerrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CerrarActionPerformed(evt);
-            }
-        });
-        jPanel1.add(Cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 41, 80, 40));
-
         addIMG.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         addIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/add.png"))); // NOI18N
         addIMG.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(addIMG, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 0, 380, 210));
+        jPanel1.add(addIMG, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 30, 370, 190));
 
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
@@ -370,7 +358,7 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
                     .addComponent(Text3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Val, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
+                            .addComponent(Val, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
                             .addComponent(Cod, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Enviar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
@@ -382,7 +370,7 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(27, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Text3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -397,17 +385,17 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 0, 380, 210));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 30, 370, 190));
 
         modifyIMG.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         modifyIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/modify.png"))); // NOI18N
         modifyIMG.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(modifyIMG, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 210, 380, 210));
+        jPanel1.add(modifyIMG, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, 370, 190));
 
         deleteIMG.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         deleteIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/delete.png"))); // NOI18N
         deleteIMG.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(deleteIMG, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 420, 380, 210));
+        jPanel1.add(deleteIMG, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 430, 370, 190));
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -448,27 +436,28 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
                                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(46, 46, 46))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(28, 28, 28)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                                .addGap(22, 22, 22)
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(Text1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addContainerGap()
                 .addComponent(Text1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(16, 16, 16)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -476,10 +465,10 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 210, -1, 210));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, 370, 190));
 
         jPanel5.setBackground(new java.awt.Color(153, 255, 255));
         jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -505,20 +494,21 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Text2, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(jPanel5Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel5Layout.createSequentialGroup()
-                            .addGap(30, 30, 30)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Text2, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -533,10 +523,10 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton6)
                     .addComponent(jButton5))
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 420, -1, 210));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 430, 370, 190));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -557,10 +547,6 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
     private void CodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CodActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CodActionPerformed
-
-    private void CerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CerrarActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_CerrarActionPerformed
 
     private void CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarActionPerformed
         desactivar();
@@ -597,7 +583,6 @@ public class G_Proveedores extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Borrar;
     private javax.swing.JButton Cancelar;
-    private javax.swing.JButton Cerrar;
     private javax.swing.JTextField Cod;
     private javax.swing.JTextField Des;
     private javax.swing.JButton Eliminar;

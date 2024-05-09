@@ -189,19 +189,6 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="Cerrar">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Cerrar"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CerrarActionPerformed"/>
-          </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="560" y="41" width="80" height="40"/>
-            </Constraint>
-          </Constraints>
-        </Component>
         <Component class="javax.swing.JLabel" name="addIMG">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
@@ -216,7 +203,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="670" y="0" width="380" height="210"/>
+              <AbsoluteConstraints x="670" y="30" width="370" height="190"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -229,11 +216,11 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    @Override&#xa;    protected void paintComponent(Graphics g){&#xa;        super.paintComponent(g);&#xa;        Color color1 = Color.decode(&quot;#439BFF&quot;);&#xa;        Color color2 = Color.decode(&quot;#0070F0&quot;);&#xa;        Graphics2D G2D = (Graphics2D) g.create();&#xa;&#xa;        GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;        G2D.setPaint(gp);&#xa;        G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;        G2D.dispose();&#xa;    }&#xa;}"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    @Override&#xa;    protected void paintComponent(Graphics g){&#xa;        super.paintComponent(g);&#xa;        Color color = Color.decode(&quot;#4894FF&quot;);&#xa;        Graphics2D g2d = (Graphics2D) g.create();&#xa;&#xa;        GradientPaint gp = new GradientPaint(0, 0, color, 0, getHeight(), color);&#xa;        g2d.setPaint(gp);&#xa;        g2d.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;        g2d.dispose();&#xa;    }&#xa;}"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="670" y="0" width="380" height="210"/>
+              <AbsoluteConstraints x="670" y="30" width="370" height="190"/>
             </Constraint>
           </Constraints>
 
@@ -246,7 +233,7 @@
                           <Component id="Text3" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="Val" pref="163" max="32767" attributes="0"/>
+                                  <Component id="Val" pref="153" max="32767" attributes="0"/>
                                   <Component id="Cod" alignment="0" max="32767" attributes="0"/>
                                   <Component id="Enviar" alignment="0" max="32767" attributes="0"/>
                               </Group>
@@ -264,7 +251,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="27" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="Text3" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -337,7 +324,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="670" y="210" width="380" height="210"/>
+              <AbsoluteConstraints x="670" y="230" width="370" height="190"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -355,7 +342,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="670" y="420" width="380" height="210"/>
+              <AbsoluteConstraints x="670" y="430" width="370" height="190"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -371,11 +358,11 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;@Override&#xa;    protected void paintComponent(Graphics g){&#xa;        super.paintComponent(g);&#xa;        Color color1 = Color.decode(&quot;#439BFF&quot;);&#xa;        Color color2 = Color.decode(&quot;#0070F0&quot;);&#xa;        Graphics2D G2D = (Graphics2D) g.create();&#xa;&#xa;        GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;        G2D.setPaint(gp);&#xa;        G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;        G2D.dispose();&#xa;    }&#xa;}"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    @Override&#xa;    protected void paintComponent(Graphics g){&#xa;        super.paintComponent(g);&#xa;        Color color = Color.decode(&quot;#4894FF&quot;);&#xa;        Graphics2D g2d = (Graphics2D) g.create();&#xa;&#xa;        GradientPaint gp = new GradientPaint(0, 0, color, 0, getHeight(), color);&#xa;        g2d.setPaint(gp);&#xa;        g2d.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;        g2d.dispose();&#xa;    }&#xa;}"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="670" y="210" width="-1" height="210"/>
+              <AbsoluteConstraints x="670" y="230" width="370" height="190"/>
             </Constraint>
           </Constraints>
 
@@ -394,9 +381,10 @@
                                       </Group>
                                       <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel4" min="-2" pref="132" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -409,21 +397,21 @@
                           </Group>
                           <Component id="Text1" alignment="1" min="-2" pref="326" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                      <EmptySpace pref="23" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="Text1" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel5" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -433,7 +421,7 @@
                           <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="27" max="32767" attributes="0"/>
+                      <EmptySpace pref="21" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -515,11 +503,11 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;@Override&#xa;    protected void paintComponent(Graphics g){&#xa;        super.paintComponent(g);&#xa;        Color color1 = Color.decode(&quot;#439BFF&quot;);&#xa;        Color color2 = Color.decode(&quot;#0070F0&quot;);&#xa;        Graphics2D G2D = (Graphics2D) g.create();&#xa;&#xa;        GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);&#xa;        G2D.setPaint(gp);&#xa;        G2D.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;        G2D.dispose();&#xa;    }&#xa;}"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    @Override&#xa;    protected void paintComponent(Graphics g){&#xa;        super.paintComponent(g);&#xa;        Color color = Color.decode(&quot;#4894FF&quot;);&#xa;        Graphics2D g2d = (Graphics2D) g.create();&#xa;&#xa;        GradientPaint gp = new GradientPaint(0, 0, color, 0, getHeight(), color);&#xa;        g2d.setPaint(gp);&#xa;        g2d.fillRect(0, 0, getWidth(), getHeight());&#xa;&#xa;        g2d.dispose();&#xa;    }&#xa;}"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="670" y="420" width="-1" height="210"/>
+              <AbsoluteConstraints x="670" y="430" width="370" height="190"/>
             </Constraint>
           </Constraints>
 
@@ -527,24 +515,26 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="Text2" alignment="1" min="-2" pref="326" max="-2" attributes="0"/>
-                          <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel9" min="-2" pref="174" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField6" min="-2" pref="159" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="jButton6" min="-2" pref="109" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton5" min="-2" pref="109" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="jButton6" min="-2" pref="109" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jButton5" min="-2" pref="109" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel9" min="-2" pref="126" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jTextField6" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="Text2" alignment="1" min="-2" pref="322" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="39" max="32767" attributes="0"/>
+                      <EmptySpace pref="23" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -563,7 +553,7 @@
                           <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="39" max="32767" attributes="0"/>
+                      <EmptySpace pref="19" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
