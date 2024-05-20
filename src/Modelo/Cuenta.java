@@ -14,8 +14,11 @@ public class Cuenta {
     
     public Cuenta(String id_trabajador, String contraseña) {
         this.id_trabajador = id_trabajador;
-        this.usuario = usuario;
         this.contraseña = contraseña;
+    }
+    
+    public Cuenta(String id_trabajador) {
+        this.id_trabajador = id_trabajador;
     }
     
     public Cuenta(){

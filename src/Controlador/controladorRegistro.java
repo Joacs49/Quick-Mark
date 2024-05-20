@@ -6,8 +6,8 @@ package Controlador;
 
 import Modelo.Cuenta;
 import Modelo.TextPrompt;
-import ModeloDao.ICuentaDAO;
-import ModeloService.CuentaDaoImpl;
+import Modelo.Dao.ICuentaDAO;
+import Modelo.Service.CuentaDaoImpl;
 import Vistas.Inicio_Sesion;
 import Vistas.Registrar;
 import java.awt.event.ActionEvent;
@@ -64,9 +64,20 @@ public class controladorRegistro implements ActionListener{
         cuenta.setContraseña(registrar.jPasswordField1.getText());
         
         if(e.getSource() == registrar.Registrar){
-            cuentaDao.crearCuenta(cuenta);
-            registrar.dispose();
+            boolean confirmar = cuentaDao.crearCuenta(cuenta);
+            
+            if(confirmar == true){
+                registrar.dispose();
+            }else{
+                borrar();
+            }
         }
+    }
+    
+    private void borrar(){
+        registrar.jTextField1.setText("");
+        registrar.jTextField2.setText("");
+        registrar.jPasswordField1.setText("");
     }
     
     private static final String textoLabel3 = "<html><span style='color: white; font-family: Perpetua; font-size: 14px;'>"

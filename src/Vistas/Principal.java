@@ -168,21 +168,15 @@ public class Principal extends javax.swing.JFrame {
                 g2d.setColor(color1);
                 g2d.fillRoundRect(0, 0, getWidth(), getHeight(), borderRadius, borderRadius);
 
-                Color textColor = new Color(19, 23, 53);
-                Font font = new Font("SansSerif", Font.BOLD, 18);
-                g2d.setFont(font);
-                g2d.setColor(textColor);
-                g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-
-                String text = "<html><div align = 'justify'>"
-                + "Quick Mark es una empresa especializada en ofrecer "
+                String text ="<html><div align = 'justify'>"
+                +"Quick Mark es una empresa especializada en ofrecer "
                 + "soluciones eficientes y precisas para la gestión de productos. "
                 + "Su enfoque se centra en proporcionar servicios ágiles y de alta calidad, "
                 + "asegurando la confianza y satisfacción de sus clientes."
-                + "</div></html>";
+                +"</div></html>";
 
                 JLabel label = new JLabel(text);
-                label.setFont(new Font("SansSerif", Font.BOLD, 18));
+                label.setFont(new Font("Dialog", Font.BOLD, 18));
                 label.setForeground(new Color(19, 23, 53));
                 label.setBounds(20, 20, getWidth() - 40, getHeight() - 40);
                 label.setVerticalAlignment(JLabel.TOP);
@@ -224,12 +218,10 @@ public class Principal extends javax.swing.JFrame {
                 Graphics2D G2D = (Graphics2D) g.create();
 
                 if(activo[3] == false){
-                    Color color1 = Color.decode("#FFFFFF");
-                    Color color2 = Color.decode("#FFFFFF");
+                    Color color = Color.decode("#FFFFFF");
 
-                    GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);
-                    G2D.setPaint(gp);
-                    G2D.fillRect(0, 0, getWidth(), getHeight());
+                    g.setColor(color);
+                    g.fillRect(0, 0, getWidth(), getHeight());
 
                     String texto = "Gestion de Proveedores";
 
@@ -308,12 +300,10 @@ public class Principal extends javax.swing.JFrame {
                 Graphics2D G2D = (Graphics2D) g.create();
 
                 if(activo[2] == false){
-                    Color color1 = Color.decode("#FFFFFF");
-                    Color color2 = Color.decode("#FFFFFF");
+                    Color color = Color.decode("#FFFFFF");
 
-                    GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);
-                    G2D.setPaint(gp);
-                    G2D.fillRect(0, 0, getWidth(), getHeight());
+                    g.setColor(color);
+                    g.fillRect(0, 0, getWidth(), getHeight());
 
                     String texto = "Gestion de Pedidos";
 
@@ -392,12 +382,10 @@ public class Principal extends javax.swing.JFrame {
                 Graphics2D G2D = (Graphics2D) g.create();
 
                 if(activo[1] == false){
-                    Color color1 = Color.decode("#FFFFFF");
-                    Color color2 = Color.decode("#FFFFFF");
+                    Color color = Color.decode("#FFFFFF");
 
-                    GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);
-                    G2D.setPaint(gp);
-                    G2D.fillRect(0, 0, getWidth(), getHeight());
+                    g.setColor(color);
+                    g.fillRect(0, 0, getWidth(), getHeight());
 
                     String texto = "Gestion de Inventario";
 
@@ -480,12 +468,10 @@ public class Principal extends javax.swing.JFrame {
                 Graphics2D G2D = (Graphics2D) g.create();
 
                 if(activo[0] == false){
-                    Color color1 = Color.decode("#FFFFFF");
-                    Color color2 = Color.decode("#FFFFFF");
+                    Color color = Color.decode("#FFFFFF");
 
-                    GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);
-                    G2D.setPaint(gp);
-                    G2D.fillRect(0, 0, getWidth(), getHeight());
+                    g.setColor(color);
+                    g.fillRect(0, 0, getWidth(), getHeight());
 
                     String texto = "Inicio";
 

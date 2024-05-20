@@ -2,12 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ModeloService;
+package Modelo.Service;
 
+import java.sql.*;
 import Conexion.cConexion;
 import Controlador.controladorPrincipal;
 import Modelo.Cuenta;
-import ModeloDao.ICuentaDAO;
+import Modelo.Pedidos;
+import Modelo.Productos;
+import Modelo.Dao.ICuentaDAO;
+import Vistas.G_Pedidos;
 import Vistas.Inicio_Sesion;
 import Vistas.Principal;
 import java.sql.PreparedStatement;
@@ -22,7 +26,10 @@ public class CuentaDaoImpl implements ICuentaDAO{
     
     private Principal prin = new Principal();
     private Cuenta cuenta = new Cuenta();
-    private controladorPrincipal principal = new controladorPrincipal(prin, cuenta);
+    private G_Pedidos pedidos_vista = new G_Pedidos();
+    private Pedidos pedidos = new Pedidos();
+    private Productos productos = new Productos();
+    private controladorPrincipal principal = new controladorPrincipal(prin, cuenta, pedidos_vista, pedidos, productos);
     private Inicio_Sesion inicio = new Inicio_Sesion();
     
     public CuentaDaoImpl(){
@@ -30,7 +37,8 @@ public class CuentaDaoImpl implements ICuentaDAO{
     }
 
     @Override
-    public void crearCuenta(Cuenta cuenta) {
+    public boolean crearCuenta(Cuenta cuenta) {
+        boolean confirmar = false;
         try{
            pst = cn.conectar().prepareCall("CALL CREAR_CUENTA(?,?,?)"); 
            
@@ -43,10 +51,14 @@ public class CuentaDaoImpl implements ICuentaDAO{
            JOptionPane.showMessageDialog(null, "Cuenta creada Exitosamente");
            
            inicio.setVisible(true);
+           confirmar = true;
            
+        }catch(SQLIntegrityConstraintViolationException e){
+            JOptionPane.showMessageDialog(null, "La cuenta ya existe.");
         }catch(Exception e){
-            JOptionPane.showMessageDialog(null, "Ocurrio un problema");
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema.");
         }
+        return confirmar;
     }
 
     @Override
@@ -81,9 +93,10 @@ public class CuentaDaoImpl implements ICuentaDAO{
             rst = pst.executeQuery();
             
             while(rst.next()){
+                rst.getString(1);
                 rst.getString(2);
                 
-                cadena += rst.getString(2);
+                cadena += rst.getString(1) + "," + rst.getString(2);
             }
             
         }catch(Exception e){

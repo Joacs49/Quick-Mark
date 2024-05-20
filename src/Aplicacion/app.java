@@ -16,6 +16,5 @@ public class app {
         
         controladorInicio controlador = new controladorInicio(inicio, cuenta);
         controlador.iniciar();
-    }
-    
+    }  
 } 

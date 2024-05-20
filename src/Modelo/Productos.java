@@ -10,13 +10,20 @@ public class Productos{
     private int stock_min;
     private int cantidad;
     
-    public Productos(int cod_prod, String des_prod, double val_uni, int stock_max, int stock_min, int cantidad, String cod_cate) {
+    public Productos(String des_prod, double val_uni, int stock_max, int stock_min, int cantidad, String cod_cate) {
         this.cod_prod = cod_prod;
         this.des_prod = des_prod;
         this.val_uni = val_uni;
         this.stock_max = stock_max;
         this.stock_min = stock_min;
         this.cantidad = cantidad;
+    }
+    
+    public Productos(int cod_prod) {
+        this.cod_prod = cod_prod;
+    }
+
+    public Productos() {
     }
 
     public int getCod_prod() {

@@ -6,8 +6,8 @@ package Controlador;
 
 import Modelo.Cuenta;
 import Modelo.TextPrompt;
-import ModeloDao.ICuentaDAO;
-import ModeloService.CuentaDaoImpl;
+import Modelo.Dao.ICuentaDAO;
+import Modelo.Service.CuentaDaoImpl;
 import Vistas.Inicio_Sesion;
 import Vistas.Registrar;
 import java.awt.event.ActionEvent;
