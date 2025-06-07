@@ -45,19 +45,6 @@ Optimizar las operaciones de la tienda Quick Mark mediante la implementación de
 - Rendimiento óptimo frente a grandes volúmenes de datos.
 - Usabilidad elevada para facilitar la adopción por parte del personal.
 
-## Capturas de Pantalla / Mockups
-
-*(Agregar aquí imágenes de la interfaz del sistema si se desea ilustrar)*
-
-## Estado del Proyecto
-
-🚧 En desarrollo / ✅ Finalizado (actualiza según el estado real del repositorio)
-
-## Equipo de Desarrollo
-
-- Daniel Enrique Ramos Saravia — U21319410
-- Joaquin Gael Muñoz Lopez — U21223192
-
 ## Contribuciones Futuras
 
 - Mejoras en el sistema de búsqueda y filtrado.
